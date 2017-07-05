@@ -7,6 +7,7 @@ LINUX_LIBCRYPT = -lcrypt
 LINUX_LIBCAP = -lcap
 
 CC = gcc
+OBJECTS = main.o sum.o
 
 IMPL_CFLAGS = -std=c99 -D_XOPEN_SOURCE=700 \
 			  -D_DEFAULT_SOURCE \

@@ -1,12 +1,8 @@
 include Makefile.inc
 
-GEN_EXE = my_sum
-
-EXE = ${GEN_EXE}
+EXE = my_sum
 
 all : ${EXE}
-
-allgen : ${GEN_EXE}
 
 clean : 
 	${RM} ${EXE} *.o
@@ -14,5 +10,5 @@ clean :
 showall :
 	@ echo ${EXE}
 
-${EXE} :
+${EXE} : ${OBJECTS}
 	${CC} ${CFLAGS} -o $@ $^
