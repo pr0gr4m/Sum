@@ -1,11 +1,11 @@
 include Makefile.inc
 
-EXE = my_sum
+EXE = sum_test
 
 all : ${EXE}
 
 clean : 
-	${RM} ${EXE} *.o
+	${RM} *.o ${EXE}
 
 showall :
 	@ echo ${EXE}
